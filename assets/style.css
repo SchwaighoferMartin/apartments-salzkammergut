@@ -264,3 +264,19 @@ footer.site .sister{display:inline-block;margin-top:12px;padding:10px 14px;borde
 .cc .row .btn{flex:1;min-height:44px;min-width:140px}
 .cc .btn-dark{background:var(--ink);color:var(--bg)}
 .linkbtn{all:unset;cursor:pointer;text-decoration:underline}
+
+.trip-filter{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:24px}
+.trip-filter a{padding:8px 16px;border-radius:99px;border:1px solid var(--line);text-decoration:none;font-weight:600;background:var(--surface)}
+.trips{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+@media (max-width:980px){.trips{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:620px){.trips{grid-template-columns:1fr}}
+.trip{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);overflow:hidden;display:flex;flex-direction:column;scroll-margin-top:100px}
+.trip figure{margin:0;aspect-ratio:3/2;position:relative;max-width:100%;background:var(--line)}
+.trip figure img{width:100%;height:100%;object-fit:cover}
+.trip figcaption{position:absolute;right:8px;bottom:8px;font-size:.72rem;background:rgba(0,0,0,.5);color:#fff;padding:2px 8px;border-radius:99px}
+.trip-body{padding:18px 20px 22px;display:grid;gap:8px}
+.trip-body .tag{font:600 .75rem var(--font-body);letter-spacing:.1em;text-transform:uppercase;color:var(--accent-ink, var(--pink-ink))}
+.trip-body h3{font-size:1.25rem}
+.trip-body .dist{font-size:.88rem;color:var(--muted);font-variant-numeric:tabular-nums}
+.trip-body p{color:var(--ink-soft);font-size:.97rem}
+.trip-note{margin-top:22px;font-size:.85rem;color:var(--muted);max-width:70ch}
