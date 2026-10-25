@@ -1,10 +1,4 @@
-<!doctype html>
-<html lang="de">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<meta name="robots" content="noindex, nofollow">
-<title>Apartments Salzkammergut Gosau</title>
+<!doctype html><html lang="de"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><meta name="robots" content="noindex, nofollow"><title>Apartments Salzkammergut Gosau</title>
 <meta name="claude:viewport-fit-sides" content="cover">
 <meta name="description" content="4 neue Ferienwohnungen in Gosau am Dachstein mit Self-Check-in, Tiefgarage, E-Ladestation und Bergblick. Für 2 bis 8 Personen, 15 Minuten nach Hallstatt. Direkt buchen.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -79,8 +73,12 @@ p{margin:0}
 .hero{position:relative}
 .hero-img{height:clamp(320px,58vw,620px);object-fit:cover;width:100%}
 .hero-card{position:relative;margin-top:-140px;background:var(--surface);border-radius:var(--r);padding:clamp(22px,4vw,44px);max-width:760px;box-shadow:0 20px 60px -30px rgba(0,0,0,.35);display:grid;gap:18px}
-.hero-card .logo{position:absolute;right:clamp(14px,3vw,30px);top:-74px;width:clamp(110px,16vw,150px);filter:drop-shadow(0 6px 18px rgba(0,0,0,.18));background:#fff;border-radius:50%;padding:8px}
-.hero h1{font-size:clamp(2.2rem,5.6vw,4rem);font-weight:800;padding-right:clamp(0px,10vw,120px)}
+.hero-card{grid-template-columns:auto 1fr;align-items:center;column-gap:clamp(20px,4vw,40px);max-width:980px}
+.hero-card > :not(.logo-tile){grid-column:2}
+.logo-tile{grid-column:1;grid-row:1 / span 4;background:#fff;border-radius:var(--r);padding:10px;width:clamp(180px,22vw,260px)}
+.logo-tile img{width:100%;height:auto}
+@media (max-width:700px){.hero-card{grid-template-columns:1fr}.hero-card > :not(.logo-tile){grid-column:1}.logo-tile{grid-row:auto;width:min(240px,70%);justify-self:center}}
+.hero h1{font-size:clamp(2.2rem,5.6vw,4rem);font-weight:800}
 .hero h1 .script{display:block;font-size:.62em;font-weight:600;letter-spacing:0;margin-top:.15em}
 .lead{font-size:1.15rem;color:var(--ink-soft);max-width:58ch}
 .cta-row{display:flex;flex-wrap:wrap;gap:12px}
@@ -189,9 +187,7 @@ footer.site .sister{display:inline-block;margin-top:12px;padding:10px 14px;borde
   .mobile-book .btn{flex:1}
   body{padding-bottom:76px}
 }
-</style>
-</head>
-<body>
+</style></head><body>
 
 <div class="draft-note">Entwurf zur Abstimmung · Deutsch · EN und CS folgen nach Freigabe</div>
 
@@ -219,10 +215,10 @@ footer.site .sister{display:inline-block;margin-top:12px;padding:10px 14px;borde
     <img class="hero-img" src="img/ausblick-gosaukamm-vom-haus.webp" alt="Blick von den Apartments Salzkammergut über Gosau auf den Gosaukamm an einem Sommertag" width="1600" height="1066" fetchpriority="high">
     <div class="wrap">
       <div class="hero-card">
-        <img class="logo" src="img/apartments-logo.webp" alt="Logo Apartments Salzkammergut Gosau" width="150" height="150">
+        <div class="logo-tile"><img src="img/apartments-logo.webp" alt="Logo Apartments Salzkammergut Gosau" width="700" height="700"></div>
         <p class="eyebrow">Gosau am Dachstein · Welterberegion Salzkammergut</p>
         <h1>Apartments Salzkammergut <span class="script">in Gosau</span></h1>
-        <p class="lead">Vier neue Ferienwohnungen für 2 bis 8 Personen. Du checkst per Code ein, stellst das Auto in die Tiefgarage und bist in 15 Minuten in Hallstatt.</p>
+        <p class="lead">Vier neue Ferienwohnungen für 2 bis 8 Personen. Du checkst per Code ein, parkst in der Tiefgarage oder direkt vor dem Haus und bist in 15 Minuten in Hallstatt.</p>
         <div class="cta-row">
           <a class="btn btn-book js-book" href="#">Verfügbarkeit prüfen</a>
           <a class="btn btn-ghost" href="#apartments">Wohnungen ansehen</a>
@@ -234,7 +230,7 @@ footer.site .sister{display:inline-block;margin-top:12px;padding:10px 14px;borde
   <div class="wrap">
     <div class="facts" role="list">
       <div class="fact" role="listitem"><b>Self-Check-in</b><span>Code statt Schlüssel, Anreise ab 16 Uhr</span></div>
-      <div class="fact" role="listitem"><b>Tiefgarage</b><span>Ein Platz pro Wohnung, mit E-Ladestation</span></div>
+      <div class="fact" role="listitem"><b>Parken</b><span>Tiefgarage mit E-Ladestation, dazu Parkplätze im Freien</span></div>
       <div class="fact" role="listitem"><b>Bus 20 m vor der Tür</b><span>Haltestelle Gosau Sommerhof</span></div>
       <div class="fact" role="listitem"><b>Skilift zu Fuß</b><span>Hornspitz, Skiregion Dachstein West</span></div>
       <div class="fact" role="listitem"><b>Skikeller</b><span>Versperrbar, für Ski und Räder</span></div>
@@ -250,10 +246,10 @@ footer.site .sister{display:inline-block;margin-top:12px;padding:10px 14px;borde
       </div>
       <div class="apts">
         <article class="apt">
-          <figure><img src="img/apartment-gosausee-schlafzimmer.webp" alt="Apartment Gosausee: Wohn-Schlafraum mit Doppelbett, Sofa und Balkontür" width="1000" height="666" loading="lazy"><span class="tag">32 m² · Balkon</span></figure>
+          <figure><img src="img/apartment-gosausee-schlafzimmer.webp" alt="Apartment Gosausee: Wohn-Schlafraum mit Doppelbett, Sofa und Balkontür" width="1000" height="666" loading="lazy"><span class="tag">32 m² · Balkon mit Bergblick</span></figure>
           <div class="apt-body">
             <h3>Apartment Gosausee<small>Für Paare · alles auf einer Ebene</small></h3>
-            <ul class="specs"><li>2 Personen</li><li>1 Doppelbett</li><li>Küche mit Kochinsel</li></ul>
+            <ul class="specs"><li>2 Personen</li><li>1 Doppelbett</li><li>Balkon: Blick auf Piste und Berge</li></ul>
           </div>
           <div class="apt-foot"><p class="price"><b>ab € 120</b><small>pro Nacht für 2 Personen</small></p><a class="btn btn-book js-book" href="#">Buchen</a></div>
         </article>
@@ -266,10 +262,10 @@ footer.site .sister{display:inline-block;margin-top:12px;padding:10px 14px;borde
           <div class="apt-foot"><p class="price"><b>ab € 140</b><small>pro Nacht für 2 Personen</small></p><a class="btn btn-book js-book" href="#">Buchen</a></div>
         </article>
         <article class="apt">
-          <figure><img src="img/apartment-hallstaettersee-wohnkueche.webp" alt="Apartment Hallstättersee: Essplatz mit Bank vor der hellen Wohnküche" width="1000" height="666" loading="lazy"><span class="tag">60 m² · Terrasse</span></figure>
+          <figure><img src="img/apartment-hallstaettersee-wohnkueche.webp" alt="Apartment Hallstättersee: Essplatz mit Bank vor der hellen Wohnküche" width="1000" height="666" loading="lazy"><span class="tag">60 m² · Balkon mit Bergblick</span></figure>
           <div class="apt-body">
             <h3>Apartment Hallstättersee<small>Zwei Schlafzimmer auf einer Ebene</small></h3>
-            <ul class="specs"><li>2–4 Personen</li><li>2 Schlafzimmer</li><li>Lounge im Freien</li></ul>
+            <ul class="specs"><li>2–4 Personen</li><li>2 Schlafzimmer</li><li>Balkon: Blick auf Piste und Berge</li></ul>
           </div>
           <div class="apt-foot"><p class="price"><b>ab € 150</b><small>pro Nacht für 2 Personen</small></p><a class="btn btn-book js-book" href="#">Buchen</a></div>
         </article>
@@ -357,14 +353,14 @@ footer.site .sister{display:inline-block;margin-top:12px;padding:10px 14px;borde
           <p class="eyebrow">Lage &amp; Anreise</p>
           <h2>Gosauseestraße 57, 4824 Gosau</h2>
         </div>
-        <div><h3>Mit dem Auto</h3><p>In Gosau Richtung Gosausee und Hintertal. Die Apartments liegen gegenüber dem Hotel Sommerhof. Einfahrt in die Tiefgarage direkt am Haus.</p></div>
+        <div><h3>Mit dem Auto</h3><p>In Gosau Richtung Gosausee und Hintertal. Die Apartments liegen gegenüber dem Hotel Sommerhof. Einfahrt in die Tiefgarage direkt am Haus. Zusätzlich gibt es Parkplätze im Freien vor dem Haus.</p></div>
         <div><h3>Mit Zug und Bus</h3><p>Mit der Bahn bis Steeg-Gosau, weiter mit Bus 541 oder 542 Richtung Gosausee bis Gosau Sommerhof. Die Haltestelle ist 20 m vom Haus entfernt. Fahrpläne auf oebb.at und postbus.at.</p></div>
         <div><h3>Im Winter</h3><p>Der Hornspitzlift der Skiregion Dachstein West ist in wenigen Gehminuten erreichbar, die Loipe beginnt hinter dem Haus.</p></div>
       </div>
       <div class="ph-grid">
         <div class="ph"><div><b>Foto Haus Gosauseestraße 57</b>folgt, sobald die Fassade fertig ist</div></div>
         <div class="ph"><div><b>Foto Tiefgarage mit E-Ladestation</b>folgt</div></div>
-        <img src="img/apartment-wolfgangsee-fensterblick.webp" alt="Fensterblick aus dem Apartment Wolfgangsee auf Wald und Wiesen in Gosau" width="1000" height="666" loading="lazy" style="border-radius:var(--r);grid-column:1/-1;aspect-ratio:2/1;object-fit:cover;width:100%">
+        <figure style="margin:0;grid-column:1/-1"><img src="img/apartment-hallstaettersee-balkon.webp" alt="Balkon des Apartments Hallstättersee mit Lounge-Möbeln und Blick auf die Skipiste und Berge" width="1400" height="932" loading="lazy" style="border-radius:var(--r);aspect-ratio:3/2;object-fit:cover;width:100%"><figcaption style="font-size:.85rem;color:var(--muted);margin-top:8px">Balkon im Apartment Hallstättersee, mit Blick auf Skipiste und Berge</figcaption></figure>
       </div>
     </div>
   </section>
@@ -373,8 +369,8 @@ footer.site .sister{display:inline-block;margin-top:12px;padding:10px 14px;borde
     <div class="wrap faq">
       <div class="sec-head"><p class="eyebrow">Häufige Fragen</p><h2>Gut zu wissen</h2></div>
       <details><summary>Wie funktioniert der Self-Check-in?</summary><p>Vor der Anreise bekommst du per E-Mail deinen persönlichen Code für Haustür und Wohnung. Anreise ist ab 16 Uhr, Abreise bis 10 Uhr. Ein Schlüssel ist nicht nötig.</p></details>
-      <details><summary>Wo parke ich?</summary><p>Jede Wohnung hat einen eigenen Platz in der Tiefgarage. Dort gibt es auch Ladestationen für Elektroautos.</p></details>
-      <details><summary>Sind Haustiere erlaubt?</summary><p>In den Apartments leider nicht. Auf unserer Almhütte sind Haustiere nach Absprache willkommen, mehr auf almromantik.at.</p></details>
+      <details><summary>Wo parke ich?</summary><p>Jede Wohnung hat einen eigenen Platz in der Tiefgarage, dort gibt es auch Ladestationen für Elektroautos. Natürlich stehen auch Parkplätze im Freien zur Verfügung.</p></details>
+      <details><summary>Sind Haustiere erlaubt?</summary><p>In den Apartments leider nicht. Mit Hund bist du bei uns am Schmiedsipplhof herzlich willkommen: <a href="https://www.almromantik.at" target="_blank" rel="noopener" style="color:var(--pink-ink);font-weight:600">www.almromantik.at</a></p></details>
       <details><summary>Was ist im Preis enthalten?</summary><p>Bettwäsche, Handtücher, WLAN und der Tiefgaragenplatz. Dazu kommen die Endreinigung und die Nächtigungsabgabe der Gemeinde Gosau.</p></details>
       <details><summary>Wie komme ich ohne Auto nach Hallstatt?</summary><p>Mit Bus 541 oder 542 ab der Haltestelle Gosau Sommerhof vor dem Haus, mit Umstieg Richtung Hallstatt. Die aktuellen Verbindungen findest du auf oebb.at.</p></details>
     </div>
@@ -407,6 +403,4 @@ footer.site .sister{display:inline-block;margin-top:12px;padding:10px 14px;borde
 const BOOKING_URL = "https://direct.bookingandmore.com/accommodation/707d7d43-e161-4283-8286-aa543c04a651?lang=de";
 document.querySelectorAll(".js-book").forEach(a => { a.href = BOOKING_URL; a.target = "_blank"; a.rel = "noopener"; });
 </script>
-
-</body>
-</html>
+</body></html>
