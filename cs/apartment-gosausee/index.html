@@ -34,7 +34,8 @@
       <svg viewBox="0 0 40 40" aria-hidden="true"><path d="M3 33 L15 12 L20 19 L25 9 L37 33 Z" fill="none" stroke="var(--ink)" stroke-width="2.4" stroke-linejoin="round"/><path d="M21.6 15.5 L25 9 L28.6 16" fill="none" stroke="var(--pink)" stroke-width="2.4" stroke-linejoin="round"/></svg>
       <span>Apartments Salzkammergut</span>
     </a>
-    <nav class="nav" aria-label="Hlavní navigace">
+    <button class="menu-btn" type="button" aria-expanded="false" aria-controls="hauptmenu" aria-label="Menu"><span></span><span></span><span></span></button>
+    <nav id="hauptmenu" class="nav" aria-label="Hlavní navigace">
       <a href="../#apartments">Apartmány</a>
       <a href="../urlaub-salzkammergut/">Dovolená v Solné komoře</a>
       <a href="../#lage">Poloha a příjezd</a>
@@ -64,7 +65,7 @@
           <li>Kauce 300 € zablokovaná na kreditní kartě, po odjezdu uvolněna</li>
           <li>Závěrečný úklid je v ceně</li>
           <li>Místní poplatek 4,00 € za osobu a noc, děti do 15 let osvobozeny</li>
-          <li>Storno dle AGBH 2006: do 3 měsíců předem zdarma, poté 40 %, od 1 měsíce předem 70 %, v posledním týdnu 100 %</li>
+          <li>Storno dle AGBH 2006: do 3 měsíců předem zdarma, poté 40 %, od 1 měsíce předem 70 %, v posledním týdnu 90 %</li>
           <li>Domácí zvířata nejsou v apartmánech povolena, na farmě <a href="https://www.almromantik.at" target="_blank" rel="noopener">Schmiedsipplhof</a> ano</li>
           <li>Autobus 541/542, zastávka Gosau Sommerhof, 20 m od domu</li>
         </ul></section>
@@ -79,18 +80,18 @@
           <p class="price"><b>od 140 €</b><small>za noc pro 2 osoby, vč. DPH a závěrečného úklidu, bez místního poplatku</small></p>
           <dl class="kv"><dt>Velikost</dt><dd>32 m²</dd><dt>Osoby</dt><dd>2</dd><dt>Umístění v domě</dt><dd>1. patro, vše v jednom podlaží</dd><dt>Balkon</dt><dd>ano, s výhledem na hory</dd><dt>Parkování</dt><dd>Podzemní garáž + venku</dd></dl>
           <a class="btn btn-book js-book" href="https://direct.bookingandmore.com/accommodation/707d7d43-e161-4283-8286-aa543c04a651?lang=de">Ověřit dostupnost</a>
-          <p class="contact">Dotazy? +43 664 11 44 926<br>info@apartments-salzkammergut.at</p>
+          <p class="contact">Dotazy? <a href="tel:+436641144926">+43 664 11 44 926</a><br><a href="mailto:info@apartments-salzkammergut.at">info@apartments-salzkammergut.at</a></p>
         </div>
       </aside>
     </div>
-    <section style="padding-block:20px 70px"><h2 style="font-size:1.5rem;margin-bottom:16px">Naše další apartmány</h2><div class="others"><a class="other" href="../apartment-hallstaettersee/"><img srcset="../../img/hallstaettersee/hallstaettersee-25-480w.webp 480w, ../../img/hallstaettersee/hallstaettersee-25-800w.webp 800w, ../../img/hallstaettersee/hallstaettersee-25-1200w.webp 1200w, ../../img/hallstaettersee/hallstaettersee-25.webp 1400w" sizes="(max-width: 700px) 100vw, (max-width: 1100px) 50vw, 600px" width="1400" height="933" src="../../img/hallstaettersee/hallstaettersee-25.webp" alt="" loading="lazy"><div><b>Hallstättersee</b><span>60 m² · 2–4 osoby · od 140 €</span></div></a><a class="other" href="../apartment-traunsee/"><img srcset="../../img/traunsee/traunsee-2-480w.webp 480w, ../../img/traunsee/traunsee-2-800w.webp 800w, ../../img/traunsee/traunsee-2-1200w.webp 1200w, ../../img/traunsee/traunsee-2.webp 1400w" sizes="(max-width: 700px) 100vw, (max-width: 1100px) 50vw, 600px" width="1400" height="933" src="../../img/traunsee/traunsee-2.webp" alt="" loading="lazy"><div><b>Traunsee</b><span>50 m² · 2–4 osoby · od 140 €</span></div></a><a class="other" href="../apartment-wolfgangsee/"><img srcset="../../img/wolfgangsee/wolfgangsee-134-480w.webp 480w, ../../img/wolfgangsee/wolfgangsee-134-800w.webp 800w, ../../img/wolfgangsee/wolfgangsee-134.webp 934w" sizes="(max-width: 700px) 100vw, (max-width: 1100px) 50vw, 600px" width="934" height="1400" src="../../img/wolfgangsee/wolfgangsee-134.webp" alt="" loading="lazy"><div><b>Wolfgangsee</b><span>105 m² · 4–8 osob · od 280 €</span></div></a></div></section>
+    <section style="padding-block:20px 70px"><h2 style="font-size:1.5rem;margin-bottom:16px">Naše další apartmány</h2><div class="others"><a class="other" href="../apartment-hallstaettersee/"><img srcset="../../img/hallstaettersee/hallstaettersee-25-480w.webp 480w, ../../img/hallstaettersee/hallstaettersee-25-800w.webp 800w, ../../img/hallstaettersee/hallstaettersee-25-1200w.webp 1200w, ../../img/hallstaettersee/hallstaettersee-25.webp 1400w" sizes="(max-width: 700px) 100vw, (max-width: 1100px) 50vw, 600px" width="1400" height="933" src="../../img/hallstaettersee/hallstaettersee-25.webp" alt="Apartmán Hallstättersee v Gosau" loading="lazy"><div><b>Hallstättersee</b><span>60 m² · 2–4 osoby · od 140 €</span></div></a><a class="other" href="../apartment-traunsee/"><img srcset="../../img/traunsee/traunsee-2-480w.webp 480w, ../../img/traunsee/traunsee-2-800w.webp 800w, ../../img/traunsee/traunsee-2-1200w.webp 1200w, ../../img/traunsee/traunsee-2.webp 1400w" sizes="(max-width: 700px) 100vw, (max-width: 1100px) 50vw, 600px" width="1400" height="933" src="../../img/traunsee/traunsee-2.webp" alt="Apartmán Traunsee v Gosau" loading="lazy"><div><b>Traunsee</b><span>50 m² · 2–4 osoby · od 140 €</span></div></a><a class="other" href="../apartment-wolfgangsee/"><img srcset="../../img/wolfgangsee/wolfgangsee-134-480w.webp 480w, ../../img/wolfgangsee/wolfgangsee-134-800w.webp 800w, ../../img/wolfgangsee/wolfgangsee-134.webp 934w" sizes="(max-width: 700px) 100vw, (max-width: 1100px) 50vw, 600px" width="934" height="1400" src="../../img/wolfgangsee/wolfgangsee-134.webp" alt="Apartmán Wolfgangsee v Gosau" loading="lazy"><div><b>Wolfgangsee</b><span>105 m² · 4–8 osob · od 280 €</span></div></a></div></section>
   </div>
 </main>
 <footer class="site">
   <div class="wrap">
     <div>
       <h2 class="fh">Apartments Salzkammergut</h2>
-      <p>Schmez Holding GmbH<br>Gosauseestraße 57, 4824 Gosau, Rakousko<br>Tel. +43 664 11 44 926<br>info@apartments-salzkammergut.at</p>
+      <p>Schmez Holding GmbH<br>Gosauseestraße 57, 4824 Gosau, Rakousko<br>Tel. <a href="tel:+436641144926">+43 664 11 44 926</a><br><a href="mailto:info@apartments-salzkammergut.at">info@apartments-salzkammergut.at</a></p>
       <a class="sister" href="https://www.almromantik.at" target="_blank" rel="noopener">Raději na farmě nebo na horské chatě? → almromantik.at</a>
     </div>
     <div><h2 class="fh">Apartmány</h2><p><a href="../apartment-gosausee/">Gosausee</a><br><a href="../apartment-hallstaettersee/">Hallstättersee</a><br><a href="../apartment-traunsee/">Traunsee</a><br><a href="../apartment-wolfgangsee/">Wolfgangsee</a><br><a href="../apartment-grundlsee/">Grundlsee (brzy)</a><br><a href="../apartment-attersee/">Attersee (brzy)</a></p></div>

@@ -34,7 +34,8 @@
       <svg viewBox="0 0 40 40" aria-hidden="true"><path d="M3 33 L15 12 L20 19 L25 9 L37 33 Z" fill="none" stroke="var(--ink)" stroke-width="2.4" stroke-linejoin="round"/><path d="M21.6 15.5 L25 9 L28.6 16" fill="none" stroke="var(--pink)" stroke-width="2.4" stroke-linejoin="round"/></svg>
       <span>Apartments Salzkammergut</span>
     </a>
-    <nav class="nav" aria-label="Hauptnavigation">
+    <button class="menu-btn" type="button" aria-expanded="false" aria-controls="hauptmenu" aria-label="Menü"><span></span><span></span><span></span></button>
+    <nav id="hauptmenu" class="nav" aria-label="Hauptnavigation">
       <a href="../#apartments">Apartments</a>
       <a href="../urlaub-salzkammergut/">Urlaub im Salzkammergut</a>
       <a href="../#lage">Lage &amp; Anreise</a>
@@ -64,7 +65,7 @@
           <li>Kaution € 300 als Vormerkung auf deiner Kreditkarte, nach der Abreise wieder freigegeben</li>
           <li>Endreinigung ist im Preis inklusive</li>
           <li>Ortstaxe € 4,00 pro Person und Nacht, Kinder bis 15 Jahre befreit</li>
-          <li>Storno nach AGBH 2006: bis 3 Monate vorher kostenlos, danach 40 %, ab 1 Monat vorher 70 %, in der letzten Woche 100 %</li>
+          <li>Storno nach AGBH 2006: bis 3 Monate vorher kostenlos, danach 40 %, ab 1 Monat vorher 70 %, in der letzten Woche 90 %</li>
           <li>Haustiere sind in den Apartments nicht erlaubt, am <a href="https://www.almromantik.at" target="_blank" rel="noopener">Schmiedsipplhof</a> schon</li>
           <li>Bus 541/542, Haltestelle Gosau Sommerhof, 20 m vom Haus</li>
         </ul></section>
@@ -79,18 +80,18 @@
           <p class="price"><b>ab € 140</b><small>pro Nacht für 2 Personen, inkl. MwSt. und Endreinigung, zzgl. Ortstaxe</small></p>
           <dl class="kv"><dt>Größe</dt><dd>60 m²</dd><dt>Personen</dt><dd>2–4</dd><dt>Lage im Haus</dt><dd>1. OG, alles auf einer Ebene</dd><dt>Balkon</dt><dd>ja, mit Bergblick</dd><dt>Parken</dt><dd>Tiefgarage + im Freien</dd></dl>
           <a class="btn btn-book js-book" href="https://direct.bookingandmore.com/accommodation/707d7d43-e161-4283-8286-aa543c04a651?lang=de">Verfügbarkeit prüfen</a>
-          <p class="contact">Fragen? +43 664 11 44 926<br>info@apartments-salzkammergut.at</p>
+          <p class="contact">Fragen? <a href="tel:+436641144926">+43 664 11 44 926</a><br><a href="mailto:info@apartments-salzkammergut.at">info@apartments-salzkammergut.at</a></p>
         </div>
       </aside>
     </div>
-    <section style="padding-block:20px 70px"><h2 style="font-size:1.5rem;margin-bottom:16px">Unsere anderen Apartments</h2><div class="others"><a class="other" href="../apartment-gosausee/"><img srcset="../img/gosausee/gosausee-279-480w.webp 480w, ../img/gosausee/gosausee-279-800w.webp 800w, ../img/gosausee/gosausee-279-1200w.webp 1200w, ../img/gosausee/gosausee-279.webp 1400w" sizes="(max-width: 700px) 100vw, (max-width: 1100px) 50vw, 600px" width="1400" height="933" src="../img/gosausee/gosausee-279.webp" alt="" loading="lazy"><div><b>Gosausee</b><span>32 m² · 2 Personen · ab € 140</span></div></a><a class="other" href="../apartment-traunsee/"><img srcset="../img/traunsee/traunsee-2-480w.webp 480w, ../img/traunsee/traunsee-2-800w.webp 800w, ../img/traunsee/traunsee-2-1200w.webp 1200w, ../img/traunsee/traunsee-2.webp 1400w" sizes="(max-width: 700px) 100vw, (max-width: 1100px) 50vw, 600px" width="1400" height="933" src="../img/traunsee/traunsee-2.webp" alt="" loading="lazy"><div><b>Traunsee</b><span>50 m² · 2–4 Personen · ab € 140</span></div></a><a class="other" href="../apartment-wolfgangsee/"><img srcset="../img/wolfgangsee/wolfgangsee-134-480w.webp 480w, ../img/wolfgangsee/wolfgangsee-134-800w.webp 800w, ../img/wolfgangsee/wolfgangsee-134.webp 934w" sizes="(max-width: 700px) 100vw, (max-width: 1100px) 50vw, 600px" width="934" height="1400" src="../img/wolfgangsee/wolfgangsee-134.webp" alt="" loading="lazy"><div><b>Wolfgangsee</b><span>105 m² · 4–8 Personen · ab € 280</span></div></a></div></section>
+    <section style="padding-block:20px 70px"><h2 style="font-size:1.5rem;margin-bottom:16px">Unsere anderen Apartments</h2><div class="others"><a class="other" href="../apartment-gosausee/"><img srcset="../img/gosausee/gosausee-279-480w.webp 480w, ../img/gosausee/gosausee-279-800w.webp 800w, ../img/gosausee/gosausee-279-1200w.webp 1200w, ../img/gosausee/gosausee-279.webp 1400w" sizes="(max-width: 700px) 100vw, (max-width: 1100px) 50vw, 600px" width="1400" height="933" src="../img/gosausee/gosausee-279.webp" alt="Apartment Gosausee in Gosau" loading="lazy"><div><b>Gosausee</b><span>32 m² · 2 Personen · ab € 140</span></div></a><a class="other" href="../apartment-traunsee/"><img srcset="../img/traunsee/traunsee-2-480w.webp 480w, ../img/traunsee/traunsee-2-800w.webp 800w, ../img/traunsee/traunsee-2-1200w.webp 1200w, ../img/traunsee/traunsee-2.webp 1400w" sizes="(max-width: 700px) 100vw, (max-width: 1100px) 50vw, 600px" width="1400" height="933" src="../img/traunsee/traunsee-2.webp" alt="Apartment Traunsee in Gosau" loading="lazy"><div><b>Traunsee</b><span>50 m² · 2–4 Personen · ab € 140</span></div></a><a class="other" href="../apartment-wolfgangsee/"><img srcset="../img/wolfgangsee/wolfgangsee-134-480w.webp 480w, ../img/wolfgangsee/wolfgangsee-134-800w.webp 800w, ../img/wolfgangsee/wolfgangsee-134.webp 934w" sizes="(max-width: 700px) 100vw, (max-width: 1100px) 50vw, 600px" width="934" height="1400" src="../img/wolfgangsee/wolfgangsee-134.webp" alt="Apartment Wolfgangsee in Gosau" loading="lazy"><div><b>Wolfgangsee</b><span>105 m² · 4–8 Personen · ab € 280</span></div></a></div></section>
   </div>
 </main>
 <footer class="site">
   <div class="wrap">
     <div>
       <h2 class="fh">Apartments Salzkammergut</h2>
-      <p>Schmez Holding GmbH<br>Gosauseestraße 57, 4824 Gosau, Österreich<br>Tel. +43 664 11 44 926<br>info@apartments-salzkammergut.at</p>
+      <p>Schmez Holding GmbH<br>Gosauseestraße 57, 4824 Gosau, Österreich<br>Tel. <a href="tel:+436641144926">+43 664 11 44 926</a><br><a href="mailto:info@apartments-salzkammergut.at">info@apartments-salzkammergut.at</a></p>
       <a class="sister" href="https://www.almromantik.at" target="_blank" rel="noopener">Lieber am Bauernhof oder auf der Alm? → almromantik.at</a>
     </div>
     <div><h2 class="fh">Apartments</h2><p><a href="../apartment-gosausee/">Gosausee</a><br><a href="../apartment-hallstaettersee/">Hallstättersee</a><br><a href="../apartment-traunsee/">Traunsee</a><br><a href="../apartment-wolfgangsee/">Wolfgangsee</a><br><a href="../apartment-grundlsee/">Grundlsee (bald)</a><br><a href="../apartment-attersee/">Attersee (bald)</a></p></div>

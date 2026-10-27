@@ -45,3 +45,13 @@ if (data) {
   const c = get();
   if (c === "allow") loadGA(); else if (c !== "deny") banner();
 })();
+
+// Burgermenü
+(function () {
+  var top = document.querySelector("header.top"), btn = top && top.querySelector(".menu-btn");
+  if (!btn) return;
+  function set(open) { top.classList.toggle("open", open); btn.setAttribute("aria-expanded", open ? "true" : "false"); }
+  btn.addEventListener("click", function () { set(!top.classList.contains("open")); });
+  top.querySelectorAll(".nav a").forEach(function (a) { a.addEventListener("click", function () { set(false); }); });
+  document.addEventListener("keydown", function (e) { if (e.key === "Escape") set(false); });
+})();
