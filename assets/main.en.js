@@ -1,5 +1,5 @@
 // Buchungslink an EINER Stelle – hier austauschen, gilt für alle Seiten
-const BOOKING_URL = "https://direct.bookingandmore.com/accommodation/707d7d43-e161-4283-8286-aa543c04a651?lang=de";
+const BOOKING_URL = "https://booking.smoobu.com/9A1945665";
 // Google-Analytics-ID hier eintragen (z. B. "G-ABC123"). Leer = Analytics bleibt aus.
 const GA_ID = "";
 document.querySelectorAll(".js-book").forEach(a => { a.href = BOOKING_URL; a.target = "_blank"; a.rel = "noopener"; });
